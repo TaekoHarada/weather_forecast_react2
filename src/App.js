@@ -1,33 +1,24 @@
+import logo from "./logo.svg";
 import "./App.css";
-import "./styles/styles.css";
-import React from "react";
-import { Location } from "./components/Location";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>Weather Forecast</h1>
-        <div className="about">
-          <a href="https://github.com/TaekoHarada/weather_forcast_react">
-            Github - Weather Forecast (React)
-          </a>
-          Taeko Harada
-        </div>
-      </header>
-      <div id="container">
-        <Location />
-        <Location />
-        <Location />
-      </div>
-      <footer>
-        <p className="about">
-          Taeko Harada
-          <a href="https://github.com/TaekoHarada/weather_forcast_react">
-            Github - Weather Forecast (React)
-          </a>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Test <code>src/App.js</code> and save to reload.
         </p>
-      </footer>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+      <div>Weather forcast</div>
     </div>
   );
 }
