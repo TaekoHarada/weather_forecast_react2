@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 // import "./styles/styles.css";
 // import React from "react";
-// import { Location } from "./components/Location";
+import { Location } from "./components/Location";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
-      {/* <Location /> */}
+      <Location />
       <div>Weather forcast</div>
     </div>
   );
