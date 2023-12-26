@@ -1,7 +1,8 @@
 import React from "react";
 
+// Forecast for each day
 const Forecast = ({ day_weather }) => {
-  // convert date imformation
+  // convert date information
   function getMonDay(date) {
     const months = {
       0: "Jan",
@@ -61,4 +62,5 @@ const Forecast = ({ day_weather }) => {
     </div>
   );
 };
+
 export default Forecast;
