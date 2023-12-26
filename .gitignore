@@ -10,10 +10,7 @@
 
 # production
 /build
-<<<<<<< HEAD
-=======
 /dist
->>>>>>> 4dd7b4478d1b3009855fc80aa4536e5fbc7bfdf7
 
 # misc
 .DS_Store
@@ -25,11 +22,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
-=======
 
 # Environment Variables
 .env
 .env.build
 .vercel
->>>>>>> 4dd7b4478d1b3009855fc80aa4536e5fbc7bfdf7
