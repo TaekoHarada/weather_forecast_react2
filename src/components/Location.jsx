@@ -59,6 +59,7 @@ const Location = () => {
   const onComponentMount = async () => {
     try {
       console.log("Component is mounted!");
+      console.log(city);
       // fetch city imformation by city name
       const city_data = await getCityData(city);
       // convert the city name to the name in OpenWeather data
