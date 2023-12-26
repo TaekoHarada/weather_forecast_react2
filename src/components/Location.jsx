@@ -15,7 +15,7 @@ const Location = () => {
   async function getCityData(city_name) {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city_name}&limit=1&appid=${APIID}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city_name}&limit=1&appid=${APIID}`
       );
       // No error in response data
       if (response.ok) {
@@ -41,7 +41,7 @@ const Location = () => {
   async function getWeatherData(lat, lon) {
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&appid=${APIID}`
+        `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&appid=${APIID}`
       );
       // No error in response data
       if (response.ok) {
