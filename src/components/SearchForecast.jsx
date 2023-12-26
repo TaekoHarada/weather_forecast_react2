@@ -1,9 +1,8 @@
-// Component for a search form
-// which search 3 days weather forecast by a location entered in the text box
-
 import React from "react";
 
-export function SearchForecast({ city, setCity, onComponentMount }) {
+// Component for a search form
+// which search 3 days weather forecast by a location entered in the text box
+const SearchForecast = ({ city, setCity, onComponentMount }) => {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Event !!");
@@ -24,4 +23,5 @@ export function SearchForecast({ city, setCity, onComponentMount }) {
       </button>
     </form>
   );
-}
+};
+export default SearchForecast;

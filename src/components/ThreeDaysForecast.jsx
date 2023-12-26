@@ -1,13 +1,16 @@
 import React from "react";
-import { Forecast } from "./Forecast";
+// import { Forecast } from "./Forecast";
 
-export function ThreeDaysForecast({ weather }) {
+const ThreeDaysForecast = ({ weather }) => {
   console.log(weather);
   return (
     <div className="three_days_forecast">
-      <Forecast day_weather={weather.list[0]} />
+      Three days forecast
+      {/* <Forecast day_weather={weather.list[0]} />
       <Forecast day_weather={weather.list[1]} />
-      <Forecast day_weather={weather.list[2]} />
+      <Forecast day_weather={weather.list[2]} /> */}
     </div>
   );
-}
+};
+
+export default ThreeDaysForecast;
