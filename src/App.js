@@ -7,7 +7,7 @@ function App() {
       <header>
         <h1>Weather Forecast</h1>
         <div className="about">
-          <a href="https://github.com/TaekoHarada/weather_forcast_react">
+          <a href="https://github.com/TaekoHarada/weather_forecast_react2">
             Github - Weather Forecast (React)
           </a>
           Taeko Harada
@@ -21,7 +21,7 @@ function App() {
       <footer>
         <p className="about">
           Taeko Harada
-          <a href="https://github.com/TaekoHarada/weather_forcast_react">
+          <a href="https://github.com/TaekoHarada/weather_forecast_react2">
             Github - Weather Forecast (React)
           </a>
         </p>
