@@ -1,16 +1,23 @@
-import React from "react";
+// A Location container including 'search form' and '3 days weather forecast'
+import React, { useState, useEffect } from "react";
 
 const Location = () => {
+  const APIID = "431416ee6ac11ff008eca9e762cf30d3"; // Access key for OpenWeather
+  const DEFAULT_CITY = "Calgary"; //later it will be determine from user's location
+
+  const [city, setCity] = useState(DEFAULT_CITY);
+  const [weather, setWeather] = useState({});
+  const [loading, setLoading] = useState(true); //until fetching weather data, do not show weather information
+
   return (
     <div>
       <h1>Hello, world!</h1>
+      <h2>{city}</h2>
     </div>
   );
 };
 
 export default Location;
-
-// // A Location container including 'search form' and '3 days weather forecast'
 
 // import React, { useState, useEffect } from "react";
 // import { SearchForecast } from "./SearchForecast";
