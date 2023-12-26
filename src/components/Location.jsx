@@ -4,7 +4,7 @@ import ThreeDaysForecast from "./ThreeDaysForecast";
 
 // A Location container including 'search form' and '3 days weather forecast'
 const Location = () => {
-  const APIID = "431416ee6ac11ff008eca9e762cf30d3"; // Access key for OpenWeather
+  const APIID = process.env.REACT_APP_APIID; // Access key for OpenWeather
   const DEFAULT_CITY = "Calgary"; //later it will be determine from user's location
 
   const [city, setCity] = useState(DEFAULT_CITY);
